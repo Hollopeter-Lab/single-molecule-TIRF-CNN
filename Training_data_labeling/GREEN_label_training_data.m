@@ -1,4 +1,4 @@
-% coloc_green_viewer.m
+% GREEN_label_training_data.m
 % UI to browse and annotate Green traces that are colocalized with Far-Red spots
 % Supports tagging traces with step counts (keyboard and numpad), exporting to Excel, and loading multiple files
 
