@@ -13,7 +13,7 @@ user selected Pytorch file containing the trained CNN weights. The user then sel
 of classes will be made and saved. Multiple files will be saved: "..._predictions.csv" 
 contains the predicted step for each trace and associated probabilities for each class, 
 "..._predicted_steps_gt0.csv" only contains predicted steps and associated spot location 
-data for traces scored as greater than 0, "..._final_model_summary.csv" contains 
+data for traces where the predicted class > 0, "..._final_model_summary.csv" contains 
 class-wise summations of all traces for each sample, "..._final_model_summaries.xlsx" 
 contains class-wise summations of traces for each sample filtered by probability thresholds.
 To simplify downstream analysis, the file "..._predicted_steps_gt0.csv" will be used.
