@@ -4,7 +4,7 @@ in each of the 39 model architectures defined in the
 Model_architectures repository.
 
 GREEN_compile_classification_reports.py is meant to combine
-metrics from all test models into one excel sheet to facilitate
+metrics from all tested configurations into one excel sheet to facilitate
 choosing the best performing configurations of model architecture
 with training protocol.
 
