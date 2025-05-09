@@ -7,9 +7,9 @@ and corresponding traces extracted. The traces will then be normalized by Z-scor
 data will then be saved in a format compatible with downstream analysis via Python.
 
 2_farred_predict.py requires a user to input the exact model architecture into the code 
-(line 10) according to their training results. The script then imports a 
-user selected Pytorch file containing the trained CNN weights. The user then selects the 
-.MAT file containing the normalized far-red traces. Predictions in the assigned number
+(line 10) according to their training results. The script then prompts the user to select
+a Pytorch file containing the trained CNN weights. The script prompts the user to select the 
+.mat file containing the normalized far-red traces. Predictions in the assigned number
 of classes will be made and saved. Multiple files will be saved: "..._predictions.csv" 
 contains the predicted step for each trace and associated probabilities for each class, 
 "..._predicted_steps_gt0.csv" only contains predicted steps and associated spot location 
@@ -28,5 +28,17 @@ data will then be saved in a format compatible with downstream analysis via Pyth
 the .csv file "..._predicted_steps_gt0.csv" from the 2_farred_predict.py output. The user
 is then prompted to upload the .mat file containing their extracted and normalized green 
 traces. The script then matches and appends the green traces to the appropriate far-red 
-predictions based on shared spot locations. A .csv file with is saved with the matched data.
+predictions based on shared spot locations. A file called 
+"...farred matched to green traces.csv" is saved.
 
+5_green_predict_and_summarize.py requires a user to input the exact model architecture into the code 
+(line 10) according to their training results. The script then prompts the user to select
+a Pytorch file containing the trained CNN weights. The script prompts the user to select the 
+.csv file containing the far-red predictions matched with the green traces. Predictions in the
+assigned number of classes will be made and saved. Two files called "...green predictions matched with farred predictions.xlsx"
+and "...green predictions matched with farred predictions.csv" will be saved. The .xlsx will contain
+a summary sheet showing the number of green traces predicted in each class, a detailed_predictions 
+sheet showing each far-red spot and its prediction paired with each green spot and its prediction, a 
+green_step_counts_per_file sheet showing the green predictions broken down per sample, and a
+farRed_dist_if_green_1 showing the distribution of far-red predictions per sample when the green
+trace was classified as having one-step.
