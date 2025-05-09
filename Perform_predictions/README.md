@@ -6,5 +6,7 @@ All farred spots that are colocalized with green spots will have their spot loca
 and corresponding traces extracted. The traces will then be normalized by Z-score. The 
 data will then be saved in a format compatible with downstream analysis via Python.
 
-2_farred_predict.py imports a user selected Pytorch file containing the trained CNN. The
-user then selects the .MAT file from the previous step.
+2_farred_predict.py requires a user to change the code. The user should select the model 
+architecture (line 10) according to their training results. The scripts then imports a 
+user selected Pytorch file containing the trained CNN weights. The user then selects the 
+.MAT file containing the normalized far-red traces. 
