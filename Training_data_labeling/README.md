@@ -2,7 +2,7 @@ Each script will perform the same function for either far-red or
 green traces. .MAT files produced by the analyze_batch.m function from
 https://github.com/dickinson-lab/SiMPull-Analysis-Software/blob/master/Static_Analysis/Data_Processing/analyze_batch.m
 will be loaded. Far-red or green traces will be extracted from
-the .MAT file, normalized by Z-score, and displayed in a small GUI where 
+the .MAT file(s), normalized by Z-score, and displayed in a small GUI where 
 a user can assign photobleaching step values. These assigned labels will be saved 
 and cataloged alongside the corresponding intensity trace. If the user skips a trace, 
 it will be labeled as "0" which stands for rejected. If a trace has no steps, it can
