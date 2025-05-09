@@ -22,3 +22,6 @@ does not provide meaningful metrics on the final trained model. Rather,
 metrics from the K-fold cross validation associated with the final
 architecture and training protocol configuration should be reported 
 for the model performance.
+
+data_loading.py is a utility function to allow proper import of .MAT
+training data.
