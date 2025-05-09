@@ -1,6 +1,6 @@
 Scripts are numbered in the order that they should be performed.
 
-1_farred_trace_extract_normalize_convert.py prompts the user to upload .MAT files
+1_farred_trace_extract_normalize_convert.py prompts the user to upload .mat files
 produced by the analyze_batch.m function from https://github.com/dickinson-lab/SiMPull-Analysis-Software/blob/master/Static_Analysis/Data_Processing/analyze_batch.m.
 All far-red spots that are colocalized with green spots will have their spot location 
 and corresponding traces extracted. The traces will then be normalized by Z-score. The 
@@ -18,8 +18,15 @@ class-wise summations of all traces for each sample, "..._final_model_summaries.
 contains class-wise summations of traces for each sample filtered by probability thresholds.
 To simplify downstream analysis, the file "..._predicted_steps_gt0.csv" will be used.
 
-3_green_trace_extract_normalize_convert.py prompts the user to upload .MAT files
+3_green_trace_extract_normalize_convert.py prompts the user to upload .mat files
 produced by the analyze_batch.m function from https://github.com/dickinson-lab/SiMPull-Analysis-Software/blob/master/Static_Analysis/Data_Processing/analyze_batch.m.
 All green spots that are colocalized with far-red spots will have their spot location 
 and corresponding traces extracted. The traces will then be normalized by Z-score. The 
 data will then be saved in a format compatible with downstream analysis via Python.
+
+4_compile_green_traces_with_associated_farred_predictions.py prompts the user to upload
+the .csv file "..._predicted_steps_gt0.csv" from the 2_farred_predict.py output. The user
+is then prompted to upload the .mat file containing their extracted and normalized green 
+traces. The script then matches and appends the green traces to the appropriate far-red 
+predictions based on shared spot locations. A .csv file with is saved with the matched data.
+
