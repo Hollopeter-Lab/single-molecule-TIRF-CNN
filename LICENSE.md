@@ -1,4 +1,4 @@
-Copyright (c) 2025 by Derek Wei
+Copyright (c) 2025 by Derek T. Wei
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
