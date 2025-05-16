@@ -8,7 +8,16 @@ green_source_file, green_spotLocation, and green_trace. This will allow the data
 visualizer to display traces from colocalized spots side-by-side. To create this .csv
 file, use data_prep_for_visualization.py. This script prompts user to first select 
 the excel file containing far-red predictions matched to their colocalized green
-traces. The file is the output of 4_compile_green_traces_with_associated_farred_predictions.py.
+traces. This file is the output of 4_compile_green_traces_with_associated_farred_predictions.py.
 The script then prompts the user to select the .mat file containing all far-red traces.
-The file is the output of 
+This file is the output of 1_farred_trace_extract_normalize_convert.py. Far-red traces will
+then be extracted from the .mat file according to spot locations cataloged in the excel file to
+construct the final .csv containing all data described above.
 
+data_visualizer.py will open a gui where the user may select the .csv file of interest.
+The green and far-red traces for one colocalization event will be displayed along with the
+index number for the data within the .csv file, pixel coordinates of each spot, the source file, 
+and predicted steps for the far-red trace. The user may filter data by the number of predicted 
+steps in the far-red trace.
+
+Additional features may be added in the future.
