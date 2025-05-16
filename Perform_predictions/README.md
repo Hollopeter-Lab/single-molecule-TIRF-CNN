@@ -42,3 +42,6 @@ sheet showing each far-red spot and its prediction paired with each green spot a
 green_step_counts_per_file sheet showing the green predictions broken down per sample, and a
 farRed_dist_if_green_1 showing the distribution of far-red predictions per sample when the green
 trace was classified as having one-step.
+
+Visit the Prediciton_visualization folder to see some scripts on how to see far-red traces
+with their predictions alongside the colocalized green trace.
