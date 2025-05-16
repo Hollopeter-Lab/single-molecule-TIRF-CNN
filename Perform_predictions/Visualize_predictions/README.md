@@ -23,6 +23,6 @@ steps in the far-red trace.
 Additional features may be added in the future.
 
 NOTE: The data this tool will visualize consists of all colocalization events where the
-far-red trace was not rejected. These data will not have been analyzed for their green
-traces and filtered to also remove colocalization events based upon green trace rejection.
-The user may want to adjust the script to allow further filter the data they are visualizing. 
+far-red trace was not rejected. These data will not have had their green traces analyzed 
+and filtered to remove any green rejections. The user may want to adjust the script to allow 
+for this additional filtering. 
