@@ -32,11 +32,11 @@ def generate_enriched_file(excel_path, mat_path, output_path):
 if __name__ == "__main__":
     Tk().withdraw()  # Hide the root window
     
-    print("Select the Excel file with green traces...")
-    excel_file = filedialog.askopenfilename(title="Select Excel File", filetypes=[("CSV Files", "*.csv")])
+    print("Select the Excel file containing far-red predictions matched to colocalized green traces...")
+    excel_file = filedialog.askopenfilename(title="Select Excel File containing far-red predictions matched to colocalized green traces", filetypes=[("CSV Files", "*.csv")])
 
     print("Select the MATLAB file with far-red traces...")
-    mat_file = filedialog.askopenfilename(title="Select .mat File", filetypes=[("MATLAB Files", "*.mat")])
+    mat_file = filedialog.askopenfilename(title="Select .mat File with far-red traces", filetypes=[("MATLAB Files", "*.mat")])
 
     if excel_file and mat_file:
         output_file = filedialog.asksaveasfilename(defaultextension=".csv", title="Save Enriched File As", filetypes=[("CSV Files", "*.csv")])
